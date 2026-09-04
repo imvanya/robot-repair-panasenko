@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: c41005c129ba4d66911b75229fd70b45
+timeCreated: 1480316912
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 271239
+  packageName: 'Unity Learn | 2D Adventure Game: Robot Repair'
+  packageVersion: 2.0.0
+  assetPath: Assets/_2DAdventureGame/Tutorial_Demo/TextMesh Pro/Resources/Sprite
+    Assets/EmojiOne.asset
+  uploadId: 832758

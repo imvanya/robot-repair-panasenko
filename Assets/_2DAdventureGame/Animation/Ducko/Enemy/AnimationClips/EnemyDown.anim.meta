@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b0e4a7c7296916747b775073045c161b
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 271239
+  packageName: 'Unity Learn | 2D Adventure Game: Robot Repair'
+  packageVersion: 2.0.0
+  assetPath: Assets/_2DAdventureGame/Animation/Ducko/Enemy/AnimationClips/EnemyDown.anim
+  uploadId: 832758

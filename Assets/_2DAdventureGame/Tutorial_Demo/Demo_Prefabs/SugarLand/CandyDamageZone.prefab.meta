@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 1788d1b375f0ebf4a984a422b327e2c7
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 271239
+  packageName: 'Unity Learn | 2D Adventure Game: Robot Repair'
+  packageVersion: 2.0.0
+  assetPath: Assets/_2DAdventureGame/Tutorial_Demo/Demo_Prefabs/SugarLand/CandyDamageZone.prefab
+  uploadId: 832758

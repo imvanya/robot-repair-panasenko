@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: f9f1bcc6210ca2849b4d2241b3cbb795
+PrefabImporter:
+  externalObjects: {}
+  addedSourceAssetObjects: []
+  isPrefabVariant: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 271239
+  packageName: 'Unity Learn | 2D Adventure Game: Robot Repair'
+  packageVersion: 2.0.0
+  assetPath: Assets/_2DAdventureGame/Tutorial_Demo/Demo_Prefabs/Ducko/DuckoCollectable.prefab
+  uploadId: 832758

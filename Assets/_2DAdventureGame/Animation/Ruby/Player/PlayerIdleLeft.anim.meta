@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0a2f355514bccbb4db7582e45e78f187
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 271239
+  packageName: 'Unity Learn | 2D Adventure Game: Robot Repair'
+  packageVersion: 2.0.0
+  assetPath: Assets/_2DAdventureGame/Animation/Ruby/Player/PlayerIdleLeft.anim
+  uploadId: 832758

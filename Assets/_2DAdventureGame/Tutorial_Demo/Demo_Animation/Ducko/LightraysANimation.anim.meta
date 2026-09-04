@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 39742a70c02c9f34593e0fd03ecb860c
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 271239
+  packageName: 'Unity Learn | 2D Adventure Game: Robot Repair'
+  packageVersion: 2.0.0
+  assetPath: Assets/_2DAdventureGame/Tutorial_Demo/Demo_Animation/Ducko/LightraysANimation.anim
+  uploadId: 832758

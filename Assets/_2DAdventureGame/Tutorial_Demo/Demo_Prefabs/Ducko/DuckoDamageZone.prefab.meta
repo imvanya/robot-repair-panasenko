@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: ceee4f3cf275a21449513867f68c71ab
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 271239
+  packageName: 'Unity Learn | 2D Adventure Game: Robot Repair'
+  packageVersion: 2.0.0
+  assetPath: Assets/_2DAdventureGame/Tutorial_Demo/Demo_Prefabs/Ducko/DuckoDamageZone.prefab
+  uploadId: 832758

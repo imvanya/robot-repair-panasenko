@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 3395987270faba14c8d14dffb54b40c9
+PrefabImporter:
+  externalObjects: {}
+  addedSourceAssetObjects: []
+  isPrefabVariant: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 271239
+  packageName: 'Unity Learn | 2D Adventure Game: Robot Repair'
+  packageVersion: 2.0.0
+  assetPath: Assets/_2DAdventureGame/Tutorial_Demo/Demo_Prefabs/SugarLand/CandyCollectable.prefab
+  uploadId: 832758

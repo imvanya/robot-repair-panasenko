@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 06f5b40216d9ebd419ea9b99185d3475
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 271239
+  packageName: 'Unity Learn | 2D Adventure Game: Robot Repair'
+  packageVersion: 2.0.0
+  assetPath: Assets/_2DAdventureGame/Tutorial_Demo/Demo_Prefabs/Ruby/RubyNPC.prefab
+  uploadId: 832758

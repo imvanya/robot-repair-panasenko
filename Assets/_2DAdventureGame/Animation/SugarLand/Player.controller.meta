@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 15c93a869dd14df478b6eebf0c4a9b3d
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 9100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 271239
+  packageName: 'Unity Learn | 2D Adventure Game: Robot Repair'
+  packageVersion: 2.0.0
+  assetPath: Assets/_2DAdventureGame/Animation/SugarLand/Player.controller
+  uploadId: 832758

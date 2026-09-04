@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: f2ffc7e530d5e0644af698d33b104ed5
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 271239
+  packageName: 'Unity Learn | 2D Adventure Game: Robot Repair'
+  packageVersion: 2.0.0
+  assetPath: Assets/_2DAdventureGame/Tutorial_Demo/Demo_Prefabs/Ruby/Environment/GrassSmall.prefab
+  uploadId: 832758

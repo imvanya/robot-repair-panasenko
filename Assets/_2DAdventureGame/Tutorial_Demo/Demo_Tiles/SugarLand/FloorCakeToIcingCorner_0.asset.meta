@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c80f1adde6b87804fb3c22af4c1a4c1f
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 271239
+  packageName: 'Unity Learn | 2D Adventure Game: Robot Repair'
+  packageVersion: 2.0.0
+  assetPath: Assets/_2DAdventureGame/Tutorial_Demo/Demo_Tiles/SugarLand/FloorCakeToIcingCorner_0.asset
+  uploadId: 832758

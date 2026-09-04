@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: b8ae08010b021e64fa35289c833a4e08
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 271239
+  packageName: 'Unity Learn | 2D Adventure Game: Robot Repair'
+  packageVersion: 2.0.0
+  assetPath: Assets/_2DAdventureGame/Tutorial_Demo/Demo_Prefabs/VFX/DialogueBubble.prefab
+  uploadId: 832758

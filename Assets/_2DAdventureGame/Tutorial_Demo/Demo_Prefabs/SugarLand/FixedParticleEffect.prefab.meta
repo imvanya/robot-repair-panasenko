@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 96e172b306ca28a43aac89dd6523ada3
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 271239
+  packageName: 'Unity Learn | 2D Adventure Game: Robot Repair'
+  packageVersion: 2.0.0
+  assetPath: Assets/_2DAdventureGame/Tutorial_Demo/Demo_Prefabs/SugarLand/FixedParticleEffect.prefab
+  uploadId: 832758

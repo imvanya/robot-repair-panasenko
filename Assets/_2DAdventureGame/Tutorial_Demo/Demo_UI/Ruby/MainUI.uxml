@@ -1,0 +1,15 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="DialogWindow" src="project://database/Assets/_2DAdventureGame/Tutorial_Demo/Demo_UI/Ruby/DialogueWindow.uxml?fileID=9197481963319205126&amp;guid=92203c76062cfed4a8dbc91f651ec3fa&amp;type=3#DialogueWindow" />
+    <ui:Template name="RobotCounter" src="project://database/Assets/_2DAdventureGame/Tutorial_Demo/Demo_UI/Common/RobotCounter.uxml?fileID=9197481963319205126&amp;guid=f9938e8b2012a4aa081187560303389a&amp;type=3#RobotCounter" />
+    <ui:Template name="EndScreen" src="project://database/Assets/_2DAdventureGame/Tutorial_Demo/Demo_UI/Common/EndScreen.uxml?fileID=9197481963319205126&amp;guid=b73b060e8837d4590ae27120ab18b8ba&amp;type=3#EndScreen" />
+    <ui:VisualElement name="HealthbarBackground" style="background-image: url(&quot;project://database/Assets/_2DAdventureGame/Tutorial_Demo/Demo_Art/Ruby/UI/UIHealthFrame.png?fileID=21300000&amp;guid=2e9a3b284be34c14e809fdcd0f799ba1&amp;type=3#UIHealthFrame&quot;); height: 165px; -unity-background-scale-mode: scale-to-fit; width: 346px;">
+        <ui:VisualElement name="HealthbarContainer" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); height: 52px; width: 189px; position: absolute; top: 52px; left: 144px;">
+            <ui:VisualElement name="Healthbar" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: url(&quot;project://database/Assets/_2DAdventureGame/Tutorial_Demo/Demo_Art/Ruby/UI/UIHealthBar.png?fileID=21300000&amp;guid=292bb6b60652e5541aa6fd8507b5087e&amp;type=3#UIHealthBar&quot;); -unity-background-scale-mode: stretch-to-fill; height: 100%; width: 50%;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="CharacterPortrait" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: url(&quot;project://database/Assets/_2DAdventureGame/Tutorial_Demo/Demo_Art/Ruby/UI/CharacterPortrait.png?fileID=21300000&amp;guid=ec73128b64458a947a9603ad250e5956&amp;type=3#CharacterPortrait&quot;); -unity-background-scale-mode: scale-to-fit; height: 135px; width: 152px; position: absolute; top: 12px; left: 20px;" />
+    </ui:VisualElement>
+    <ui:Instance template="DialogWindow" name="NPCDialogue" style="position: absolute; bottom: 0; top: 70%; left: 10%; right: 10%;" />
+    <ui:Instance template="RobotCounter" name="RobotCounter" style="position: absolute; right: 20px; top: 30px; width: 300px; height: 100px;" />
+    <ui:Button text="Return To Main Menu" name="ReturnToMain" style="position: absolute; top: 30px; left: 40%; right: 40%; font-size: 18px; -unity-font-style: bold; background-color: rgb(255, 255, 255); border-top-left-radius: 12px; border-top-right-radius: 12px; border-bottom-right-radius: 12px; border-bottom-left-radius: 12px;" />
+    <ui:Instance template="EndScreen" name="EndScreen" picking-mode="Ignore" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0;" />
+</ui:UXML>

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 140a8c9b6a78d0e40ab90ec6d7917996
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 271239
+  packageName: 'Unity Learn | 2D Adventure Game: Robot Repair'
+  packageVersion: 2.0.0
+  assetPath: Assets/_2DAdventureGame/Tutorial_Demo/Demo_Prefabs/SugarLand/Environment/CakeChocBall.prefab
+  uploadId: 832758

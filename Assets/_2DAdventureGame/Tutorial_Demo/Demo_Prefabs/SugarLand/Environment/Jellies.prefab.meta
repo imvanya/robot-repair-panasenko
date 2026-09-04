@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 7414473754f2ea3458876ee8b7a981ce
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 271239
+  packageName: 'Unity Learn | 2D Adventure Game: Robot Repair'
+  packageVersion: 2.0.0
+  assetPath: Assets/_2DAdventureGame/Tutorial_Demo/Demo_Prefabs/SugarLand/Environment/Jellies.prefab
+  uploadId: 832758

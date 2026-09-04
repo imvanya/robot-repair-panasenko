@@ -1,0 +1,12 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/_2DAdventureGame/Tutorial_Demo/Demo_UI/Common/StartScreen.uss?fileID=7433441132597879392&amp;guid=21bbb292f8e00ad4c94d13b26b2d183e&amp;type=3#StartScreen" />
+    <ui:VisualElement name="Background" style="flex-grow: 1; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: url(&quot;project://database/Assets/_2DAdventureGame/Tutorial_Demo/Demo_Art/Common/Background.png?fileID=2800000&amp;guid=45466ef8ed5f0fa4a94d9de87febf418&amp;type=3#Background&quot;);" />
+    <ui:VisualElement name="TitleContainer" style="height: 200px; align-items: center; justify-content: space-around;">
+        <ui:VisualElement name="TitleImage" style="flex-grow: 1; width: 100%; background-image: url(&quot;project://database/Assets/_2DAdventureGame/Tutorial_Demo/Demo_Art/Common/Title.png?fileID=-5392625257635239999&amp;guid=772a6fef6bd2cbe4d834ddf1b135c591&amp;type=3#Untitled-2_0&quot;); -unity-background-scale-mode: scale-to-fit;" />
+    </ui:VisualElement>
+    <ui:VisualElement name="CharacterContainer" style="flex-grow: 1; flex-direction: row;">
+        <ui:VisualElement name="RubySelector" class="character-selector" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/_2DAdventureGame/Tutorial_Demo/Demo_Art/Common/CharacterScreen_Ruby.png?fileID=21300000&amp;guid=104319c8e9ba60643b4f97c877dab204&amp;type=3#CharacterScreen_Ruby&quot;); -unity-background-scale-mode: scale-to-fit;" />
+        <ui:VisualElement name="DuckoSelector" class="character-selector" style="flex-grow: 1; -unity-background-scale-mode: scale-to-fit; background-image: url(&quot;project://database/Assets/_2DAdventureGame/Tutorial_Demo/Demo_Art/Common/CharacterScreen_Ducko.png?fileID=21300000&amp;guid=29b13209e9579d848b7533076646732d&amp;type=3#CharacterScreen_Ducko&quot;);" />
+        <ui:VisualElement name="CandySelector" class="character-selector" style="flex-grow: 1; -unity-background-scale-mode: scale-to-fit; background-image: url(&quot;project://database/Assets/_2DAdventureGame/Tutorial_Demo/Demo_Art/Common/CharacterScreen_Candyman.png?fileID=21300000&amp;guid=a74b415d1272bc14d979ff85b2f2f47e&amp;type=3#CharacterScreen_Candyman&quot;);" />
+    </ui:VisualElement>
+</ui:UXML>

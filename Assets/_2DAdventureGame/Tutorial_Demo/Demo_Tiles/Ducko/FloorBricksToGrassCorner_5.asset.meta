@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0330238b7b7914b5580a9f1846bf6492
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 271239
+  packageName: 'Unity Learn | 2D Adventure Game: Robot Repair'
+  packageVersion: 2.0.0
+  assetPath: Assets/_2DAdventureGame/Tutorial_Demo/Demo_Tiles/Ducko/FloorBricksToGrassCorner_5.asset
+  uploadId: 832758

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 8e16019de868e9a419b07b4302ad7b23
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 271239
+  packageName: 'Unity Learn | 2D Adventure Game: Robot Repair'
+  packageVersion: 2.0.0
+  assetPath: Assets/_2DAdventureGame/Tutorial_Demo/Demo_Prefabs/Ducko/Environment/ExtraGrassTiles_0.prefab
+  uploadId: 832758

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 11a79d95b089a6f4c9d905174f83e96c
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 271239
+  packageName: 'Unity Learn | 2D Adventure Game: Robot Repair'
+  packageVersion: 2.0.0
+  assetPath: Assets/_2DAdventureGame/Tutorial_Demo/Demo_Tiles/Ducko/FloorGrass_0.asset
+  uploadId: 832758

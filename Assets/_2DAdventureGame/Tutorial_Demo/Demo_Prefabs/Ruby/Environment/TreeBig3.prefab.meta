@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e554534d2c4418c44a6d021f2ed8b882
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 271239
+  packageName: 'Unity Learn | 2D Adventure Game: Robot Repair'
+  packageVersion: 2.0.0
+  assetPath: Assets/_2DAdventureGame/Tutorial_Demo/Demo_Prefabs/Ruby/Environment/TreeBig3.prefab
+  uploadId: 832758

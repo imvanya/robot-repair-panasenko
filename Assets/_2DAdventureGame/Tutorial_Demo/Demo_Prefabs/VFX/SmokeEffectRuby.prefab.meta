@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 2d118a68afb70451b968ccf62b07303d
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 271239
+  packageName: 'Unity Learn | 2D Adventure Game: Robot Repair'
+  packageVersion: 2.0.0
+  assetPath: Assets/_2DAdventureGame/Tutorial_Demo/Demo_Prefabs/VFX/SmokeEffectRuby.prefab
+  uploadId: 832758

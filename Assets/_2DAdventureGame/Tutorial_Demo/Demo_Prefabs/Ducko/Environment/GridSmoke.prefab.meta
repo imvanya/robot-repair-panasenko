@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: e4d83e26b692c194c82d02abbee89585
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 271239
+  packageName: 'Unity Learn | 2D Adventure Game: Robot Repair'
+  packageVersion: 2.0.0
+  assetPath: Assets/_2DAdventureGame/Tutorial_Demo/Demo_Prefabs/Ducko/Environment/GridSmoke.prefab
+  uploadId: 832758

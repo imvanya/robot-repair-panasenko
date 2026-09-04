@@ -1,0 +1,8 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="WinScreenContainer" enabled="true" picking-mode="Ignore" style="flex-grow: 1; position: absolute; top: 0; left: 0; bottom: 0; right: 0; background-color: rgb(0, 0, 0); opacity: 0; transition-property: opacity; transition-duration: 1s; visibility: visible; display: flex; transition-timing-function: ease;">
+        <ui:VisualElement picking-mode="Ignore" name="WinScreen" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/_2DAdventureGame/Tutorial_Demo/Demo_Art/Common/WinScreen.png?fileID=-848381713617584042&amp;guid=d46766d63d5ca44c6b1a4d318b1eaf72&amp;type=3#WinScreen_0&quot;);" />
+    </ui:VisualElement>
+    <ui:VisualElement name="LoseScreenContainer" picking-mode="Ignore" style="flex-grow: 1; top: 0; left: 0; right: 0; bottom: 0; background-color: rgb(0, 0, 0); opacity: 0; transition-property: opacity; transition-duration: 2s; transition-timing-function: ease-in;">
+        <ui:VisualElement picking-mode="Ignore" name="LoseScreen" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/_2DAdventureGame/Tutorial_Demo/Demo_Art/Common/LoseScreen.png?fileID=2800000&amp;guid=68999694f4e00437a8c4f0b6053e3d45&amp;type=3#LoseScreen&quot;);" />
+    </ui:VisualElement>
+</ui:UXML>

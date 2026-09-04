@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 09e71a971a409ed43b9093c10ee65407
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 271239
+  packageName: 'Unity Learn | 2D Adventure Game: Robot Repair'
+  packageVersion: 2.0.0
+  assetPath: Assets/_2DAdventureGame/Tutorial_Demo/Demo_Prefabs/Ducko/Environment/DecorationPipes.prefab
+  uploadId: 832758

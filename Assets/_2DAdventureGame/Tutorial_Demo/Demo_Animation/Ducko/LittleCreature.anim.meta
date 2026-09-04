@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: db147498359bc5a4ea16041eed5a379a
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 271239
+  packageName: 'Unity Learn | 2D Adventure Game: Robot Repair'
+  packageVersion: 2.0.0
+  assetPath: Assets/_2DAdventureGame/Tutorial_Demo/Demo_Animation/Ducko/LittleCreature.anim
+  uploadId: 832758

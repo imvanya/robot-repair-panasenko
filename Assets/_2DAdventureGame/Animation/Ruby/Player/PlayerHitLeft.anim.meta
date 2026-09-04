@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c1b9a114c780f974284fddf886871a16
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 7400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 271239
+  packageName: 'Unity Learn | 2D Adventure Game: Robot Repair'
+  packageVersion: 2.0.0
+  assetPath: Assets/_2DAdventureGame/Animation/Ruby/Player/PlayerHitLeft.anim
+  uploadId: 832758

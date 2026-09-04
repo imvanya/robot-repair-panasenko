@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 297a88f6c129b5546b03ee0a9dcd571f
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 271239
+  packageName: 'Unity Learn | 2D Adventure Game: Robot Repair'
+  packageVersion: 2.0.0
+  assetPath: Assets/_2DAdventureGame/Tutorial_Demo/Demo_Prefabs/SugarLand/Environment/DonutPink.prefab
+  uploadId: 832758

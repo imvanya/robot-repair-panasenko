@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: bc86634c6bc2bed479a81d37da8c5c5f
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 271239
+  packageName: 'Unity Learn | 2D Adventure Game: Robot Repair'
+  packageVersion: 2.0.0
+  assetPath: Assets/_2DAdventureGame/Tutorial_Demo/Demo_Prefabs/SugarLand/Environment/CakeSlice.prefab
+  uploadId: 832758

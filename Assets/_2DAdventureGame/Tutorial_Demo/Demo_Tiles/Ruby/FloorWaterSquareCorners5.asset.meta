@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d3dd8e054672db24aa47cf852a55aada
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 271239
+  packageName: 'Unity Learn | 2D Adventure Game: Robot Repair'
+  packageVersion: 2.0.0
+  assetPath: Assets/_2DAdventureGame/Tutorial_Demo/Demo_Tiles/Ruby/FloorWaterSquareCorners5.asset
+  uploadId: 832758

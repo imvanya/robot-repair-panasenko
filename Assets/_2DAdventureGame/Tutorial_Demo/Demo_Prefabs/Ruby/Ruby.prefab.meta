@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 6809f23136949a9488669a0f58179ef9
+PrefabImporter:
+  externalObjects: {}
+  addedSourceAssetObjects: []
+  isPrefabVariant: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 271239
+  packageName: 'Unity Learn | 2D Adventure Game: Robot Repair'
+  packageVersion: 2.0.0
+  assetPath: Assets/_2DAdventureGame/Tutorial_Demo/Demo_Prefabs/Ruby/Ruby.prefab
+  uploadId: 832758

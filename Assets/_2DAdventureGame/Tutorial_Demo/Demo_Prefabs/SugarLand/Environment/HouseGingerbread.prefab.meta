@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: ed8bcda263e2a8d4a93a1e2620151b70
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 271239
+  packageName: 'Unity Learn | 2D Adventure Game: Robot Repair'
+  packageVersion: 2.0.0
+  assetPath: Assets/_2DAdventureGame/Tutorial_Demo/Demo_Prefabs/SugarLand/Environment/HouseGingerbread.prefab
+  uploadId: 832758

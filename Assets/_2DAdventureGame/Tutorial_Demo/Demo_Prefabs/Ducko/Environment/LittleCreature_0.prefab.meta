@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: b9bca066eff5e1543860f98bb50ec392
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 271239
+  packageName: 'Unity Learn | 2D Adventure Game: Robot Repair'
+  packageVersion: 2.0.0
+  assetPath: Assets/_2DAdventureGame/Tutorial_Demo/Demo_Prefabs/Ducko/Environment/LittleCreature_0.prefab
+  uploadId: 832758

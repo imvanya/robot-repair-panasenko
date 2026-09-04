@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6a8a39291f9bf9c4b87da4ea7ac1702c
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 271239
+  packageName: 'Unity Learn | 2D Adventure Game: Robot Repair'
+  packageVersion: 2.0.0
+  assetPath: Assets/_2DAdventureGame/Tutorial_Demo/Demo_Tiles/Ruby/FloorBricksToGrassCorner7.asset
+  uploadId: 832758
