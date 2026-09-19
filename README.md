@@ -16,5 +16,5 @@ Adventure Game: Robot Repair (Unity Technologies), Unity 6.3, URP.
 
 Що зрозумів про Update і Time.deltaTime: Що зрозумів про Update і Time.deltaTime: Update викликається кожен кадр, а Time.deltaTime дозволяє робити рух плавним і незалежним від FPS пристрою.  
 
-Що робитиму далі: Далі буду робити level design
+Що робитиму далі: Далі буду робити level design.
 
