@@ -196,6 +196,8 @@ MonoBehaviour:
       m_Flags: 8
     m_Flags: 0
     m_Priority: 0
+  maxHealth: 5
+  speed: 3
 --- !u!50 &7770524909638219120
 Rigidbody2D:
   serializedVersion: 5
@@ -220,7 +222,7 @@ Rigidbody2D:
     serializedVersion: 2
     m_Bits: 0
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 0
   m_CollisionDetection: 0
   m_Constraints: 4
 --- !u!61 &4032881044213043544
@@ -260,7 +262,7 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0.27130127}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0}
+    pivot: {x: 0.5204163, y: 0.052639086}
     oldSize: {x: 0.77, y: 2.21}
     newSize: {x: 0.77, y: 2.21}
     adaptiveTilingThreshold: 0.5
