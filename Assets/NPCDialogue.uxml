@@ -1,0 +1,5 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="Background" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/_2DAdventureGame/Art/Ducko/UI/UIDialogueBox.png?fileID=2800000&amp;guid=924827a9385ec3544b572966c8853b0a&amp;type=3#UIDialogueBox&quot;); background-color: rgba(0, 0, 0, 0);">
+        <ui:Label text="Тисни C, щоб стріляти шестернями, і допоможи полагодити ці зламані роботи! Повертайся, коли закінчиш." style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 25px; padding-right: 25px; padding-bottom: 25px; padding-left: 25px; -unity-font-definition: resource(&quot;FlatSkin/Font/Roboto-BlackItalic&quot;); -unity-font-style: bold; white-space: normal; width: 100%; height: 100%; font-size: 40px; -unity-text-align: upper-center;"/>
+    </ui:VisualElement>
+</ui:UXML>

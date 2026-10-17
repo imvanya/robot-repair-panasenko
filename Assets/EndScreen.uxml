@@ -1,0 +1,8 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="LoseScreenContainer" style="flex-grow: 1; opacity: 0; position: absolute; top: 0; right: 0; bottom: 0; left: 0; transition-property: opacity; transition-duration: 1s;">
+        <ui:VisualElement name="LoseScreen" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/_2DAdventureGame/Tutorial_Demo/Demo_Art/Common/LoseScreen.png?fileID=2800000&amp;guid=68999694f4e00437a8c4f0b6053e3d45&amp;type=3#LoseScreen&quot;); -unity-background-scale-mode: scale-to-fit;"/>
+    </ui:VisualElement>
+    <ui:VisualElement name="WinScreenContainer" style="flex-grow: 1; opacity: 0; position: absolute; top: 0; right: 0; bottom: 0; left: 0; transition-property: opacity; transition-duration: 1s;">
+        <ui:VisualElement name="WinScreen" style="flex-grow: 1; -unity-background-scale-mode: scale-to-fit; background-image: url(&quot;project://database/Assets/_2DAdventureGame/Tutorial_Demo/Demo_Art/Common/WinScreen.png?fileID=2800000&amp;guid=d46766d63d5ca44c6b1a4d318b1eaf72&amp;type=3#WinScreen&quot;);"/>
+    </ui:VisualElement>
+</ui:UXML>

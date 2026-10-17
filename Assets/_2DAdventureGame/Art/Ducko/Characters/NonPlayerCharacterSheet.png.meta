@@ -1,5 +1,12 @@
 fileFormatVersion: 2
 guid: 73a49dc6497977241907e855bf3ee65f
+AssetOrigin:
+  serializedVersion: 1
+  productId: 271239
+  packageName: 'Unity Learn | 2D Adventure Game: Robot Repair'
+  packageVersion: 2.0.0
+  assetPath: Assets/_2DAdventureGame/Art/Ducko/Characters/NonPlayerCharacterSheet.png
+  uploadId: 832758
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +50,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -123,89 +130,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MarthaIdle1
+      name: NonPlayerCharacterSheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 256
         width: 256
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aeca68457873ff7438f386d0ae4a98b9
-      internalID: -333191600
+      spriteID: fce329a0c942ac84dad6e610e8d25870
+      internalID: -84574808
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MarthaIdle2
+      name: NonPlayerCharacterSheet_1
       rect:
         serializedVersion: 2
         x: 256
         y: 256
         width: 256
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 473e3cd456a83924c9039906d8f72386
-      internalID: -300337328
+      spriteID: 535e34d6930bac54780f1024b8cb9801
+      internalID: 816194856
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MarthaIdle3
+      name: NonPlayerCharacterSheet_2
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 256
         height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b4b1954adc90a045b71537a142fbd88
-      internalID: -1345050003
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MarthaIdle4
-      rect:
-        serializedVersion: 2
-        x: 256
-        y: 0
-        width: 256
-        height: 256
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4726d8928574fa346a8ffe9ce4661f0d
-      internalID: 979434604
+      spriteID: 5320396d2ac8d8f42b1cd9ddc93ee25e
+      internalID: -1563236707
       vertices: []
       indices: 
       edges: []
@@ -222,21 +207,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":2.0,"y":2.0},"gridSpriteSize":{"x":256.0,"y":256.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      MarthaIdle1: -333191600
-      MarthaIdle2: -300337328
-      MarthaIdle3: -1345050003
-      MarthaIdle4: 979434604
+      NonPlayerCharacterSheet_0: -84574808
+      NonPlayerCharacterSheet_1: 816194856
+      NonPlayerCharacterSheet_2: -1563236707
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 271239
-  packageName: 'Unity Learn | 2D Adventure Game: Robot Repair'
-  packageVersion: 2.0.0
-  assetPath: Assets/_2DAdventureGame/Art/Ducko/Characters/NonPlayerCharacterSheet.png
-  uploadId: 832758
