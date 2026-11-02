@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/_2DAdventureGame/Tutorial_Demo/Demo_Scenes/Final/StartScreen.unity
     guid: c069ff6195d8a694098e66b5217b2855
   - enabled: 1
+    path: Assets/_2DAdventureGame/Scenes/MyLevel.unity
+    guid: 9daa198755cb5c24fb3a04b99b221587
+  - enabled: 1
     path: Assets/_2DAdventureGame/Tutorial_Demo/Demo_Scenes/Final/Ruby_Example_Scene.unity
     guid: 0160895f6ec224ed19a633783a19c1f1
   - enabled: 1
