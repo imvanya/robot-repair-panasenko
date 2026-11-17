@@ -1,12 +1,16 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 
+[RequireComponent(typeof(AudioSource))]
 public class PlayerController : MonoBehaviour
 {
     public InputAction MoveAction;
     Rigidbody2D rigidbody2d;
     Vector2 move;
     public float speed = 3.0f;
+
+    public float fireCooldown = 0.5f; // Час затримки в секундах
+    private float nextFireTime = 0f;  // Змінна для відстеження часу наступного пострілу
     
     public int maxHealth = 5;
     public int health { get { return currentHealth; } }
@@ -26,6 +30,12 @@ public class PlayerController : MonoBehaviour
 
     private NonPlayerCharacter lastNonPlayerCharacter;
 
+    // Звуки гравця
+    public AudioClip hitSound;      // Звук отримання шкоди
+    public AudioClip launchSound;   // Звук запуску шестерінки (НОВЕ)
+    AudioSource audioSource;
+    private float nextFootstepTime;
+
     void Start()
     {   
         LaunchAction.Enable();
@@ -34,6 +44,10 @@ public class PlayerController : MonoBehaviour
         rigidbody2d = GetComponent<Rigidbody2D>();
         currentHealth = maxHealth;
         TalkAction.Enable();
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+            audioSource = gameObject.AddComponent<AudioSource>();
+        audioSource.playOnAwake = false;
     }
 
     void Update()
@@ -47,6 +61,7 @@ public class PlayerController : MonoBehaviour
         animator.SetFloat("Look X", moveDirection.x);
         animator.SetFloat("Look Y", moveDirection.y);
         animator.SetFloat("Speed", move.magnitude);
+
         if (isInvincible)
         {
             damageCooldown -= Time.deltaTime;
@@ -55,13 +70,17 @@ public class PlayerController : MonoBehaviour
                 isInvincible = false;
             }
         }
-        if (LaunchAction.WasPressedThisFrame())
+        
+        if (LaunchAction.WasPressedThisFrame() && Time.time >= nextFireTime)
         {
+            nextFireTime = Time.time + fireCooldown;
             Launch();
         }
+        
         RaycastHit2D hit = Physics2D.Raycast(
             rigidbody2d.position + Vector2.up * 0.2f,
             moveDirection, 1.5f, LayerMask.GetMask("NPC"));
+            
         if (hit.collider != null)
         {
             NonPlayerCharacter npc =
@@ -98,12 +117,44 @@ public class PlayerController : MonoBehaviour
             isInvincible = true;
             damageCooldown = timeInvincible;
             animator.SetTrigger("Hit");
+            PlaySound(hitSound, AudioManager.Instance != null
+                ? AudioManager.Instance.playerHitVolume
+                : 1f);
         }
 
         currentHealth = Mathf.Clamp(currentHealth + amount, 0, maxHealth);
         UIHandler.instance.SetHealthValue(currentHealth / (float)maxHealth);
     }
 
+    public void PlaySound(AudioClip clip, float volume = 1f)
+    {
+        if (clip != null && audioSource != null)
+        {
+            audioSource.PlayOneShot(clip, volume);
+        }
+        else if (AudioManager.Instance != null)
+        {
+            AudioManager.Instance.PlaySFX(clip, volume);
+        }
+    }
+
+    // Called by footstep events on the four run animation clips.
+    public void PlayFootstep()
+    {
+        // Ignore an event that lands during the run-to-idle transition.
+        if (move.sqrMagnitude <= 0.01f || AudioManager.Instance == null || audioSource == null)
+            return;
+
+        // Blend trees can emit the same event from two directional clips at once.
+        if (Time.time < nextFootstepTime)
+            return;
+        nextFootstepTime = Time.time + 0.15f;
+
+        AudioClip footstep = AudioManager.Instance.playerWalk;
+        if (footstep != null)
+            audioSource.PlayOneShot(footstep, AudioManager.Instance.playerWalkVolume);
+    }
+    
     void Launch()
     {
         GameObject projectileObject = Instantiate(projectilePrefab,
@@ -113,7 +164,11 @@ public class PlayerController : MonoBehaviour
         Projectile projectile = projectileObject.GetComponent<Projectile>();
         projectile.Launch(moveDirection, 300);
 
-    animator.SetTrigger("Launch");
+        animator.SetTrigger("Launch");
+        
+        // Відтворюємо звук кидка шестерінки
+        PlaySound(AudioManager.Instance != null ? AudioManager.Instance.projectile : launchSound,
+            AudioManager.Instance != null ? AudioManager.Instance.projectileVolume : 1f);
     }
 
     void FindFriend()
@@ -122,5 +177,5 @@ public class PlayerController : MonoBehaviour
         {
             UIHandler.instance.DisplayDialogue();
         }
-}
+    }
 }
