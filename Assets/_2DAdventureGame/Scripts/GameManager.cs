@@ -1,35 +1,50 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public PlayerController player;
     EnemyController[] enemies;
     public UIHandler uiHandler;
+    private bool gameEnding;
+    private int enemiesFixed;
 
     void Start()
     {
         enemies = FindObjectsByType<EnemyController>(
             FindObjectsSortMode.None);
+        foreach (EnemyController enemy in enemies)
+            enemy.OnFixed += HandleEnemyFixed;
+
+        uiHandler.SetCounter(enemiesFixed, enemies.Length);
     }
 
-    void ReloadScene()
+    private void HandleEnemyFixed()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        enemiesFixed++;
+        uiHandler.SetCounter(enemiesFixed, enemies.Length);
     }
 
     void Update()
     {
-        if (player.health <= 0)
+        if (gameEnding)
         {
-            uiHandler.DisplayLoseScreen();
-            Invoke(nameof(ReloadScene), 3f);
+            return;
         }
 
-        if (AllEnemiesFixed())
+        if (player.health <= 0)
         {
+            gameEnding = true;
+            uiHandler.DisplayLoseScreen();
+        }
+        else if (AllEnemiesFixed())
+        {
+            gameEnding = true;
+            if (AudioManager.Instance != null)
+            {
+                AudioManager.Instance.PlaySFX(AudioManager.Instance.questComplete,
+                    AudioManager.Instance.questCompleteVolume);
+            }
             uiHandler.DisplayWinScreen();
-            Invoke(nameof(ReloadScene), 3f);
         }
     }
 

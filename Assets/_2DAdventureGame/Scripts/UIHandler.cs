@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UIElements;
 
 public class UIHandler : MonoBehaviour
@@ -14,6 +15,10 @@ public class UIHandler : MonoBehaviour
 
     private VisualElement m_WinScreen;
     private VisualElement m_LoseScreen;
+    private Label m_RobotCounter;
+    private int m_RepairedRobots;
+    private int m_TotalRobots;
+    private Button m_RestartButton;
 
     private void Awake()
     {
@@ -38,6 +43,14 @@ public class UIHandler : MonoBehaviour
             .Q<VisualElement>("LoseScreenContainer");
         m_WinScreen = uiDocument.rootVisualElement
             .Q<VisualElement>("WinScreenContainer");
+        m_RobotCounter = uiDocument.rootVisualElement.Q<Label>("CounterLabel");
+        m_RestartButton = uiDocument.rootVisualElement.Q<Button>("RestartButton");
+        if (m_RestartButton != null)
+        {
+            m_RestartButton.style.display = DisplayStyle.None;
+            m_RestartButton.clicked += RestartLevel;
+        }
+        SetCounter(m_RepairedRobots, m_TotalRobots);
     }
 
     public void SetHealthValue(float percentage)
@@ -56,6 +69,7 @@ public class UIHandler : MonoBehaviour
                 m_NonPlayerDialogue.style.display = DisplayStyle.None;
             }
         }
+
     }
 
     // НОВЕ (крок 12): показати репліку
@@ -68,11 +82,32 @@ public class UIHandler : MonoBehaviour
     public void DisplayWinScreen()
     {
         m_WinScreen.style.opacity = 1.0f;
+        ShowRestartButton();
     }
 
     public void DisplayLoseScreen()
     {
         m_LoseScreen.style.opacity = 1.0f;
+        ShowRestartButton();
+    }
+
+    private void ShowRestartButton()
+    {
+        if (m_RestartButton != null)
+            m_RestartButton.style.display = DisplayStyle.Flex;
+    }
+
+    private void RestartLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void SetCounter(int repaired, int total)
+    {
+        m_RepairedRobots = repaired;
+        m_TotalRobots = total;
+        if (m_RobotCounter != null)
+            m_RobotCounter.text = $"{repaired}/{total}";
     }
 
 }
