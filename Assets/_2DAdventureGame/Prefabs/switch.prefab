@@ -81,18 +81,18 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -5
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2048514534, guid: ce1dd762bc0fae546a366c0cc21e4822, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 95546f0bfeee43c2a5ed9d16aec4ca91, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.77, y: 0.63}
+  m_Size: {x: 0.64, y: 0.64}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!61 &736580616424254011
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -131,8 +131,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.77, y: 0.62}
-    newSize: {x: 0.77, y: 0.63}
+    oldSize: {x: 0.64, y: 0.64}
+    newSize: {x: 0.64, y: 0.64}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -153,3 +153,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::TimedSwitch
   door: {fileID: 0}
   openTime: 4
+  frameDuration: 0.08
+  doorAnimationFrames:
+  - {fileID: 21300000, guid: edf6582b07d040b293372bdf74b80b93, type: 3}
+  - {fileID: 21300000, guid: 1a0599acde4d49b98473b237c80eab9c, type: 3}
+  - {fileID: 21300000, guid: 2165fe04e6a5472090ef059e203cf5ee, type: 3}
+  - {fileID: 21300000, guid: fea5431dc5704f33ba08f0248cf2b361, type: 3}
+  - {fileID: 21300000, guid: 8a808d333d2e4b08951c54403d7d2312, type: 3}
+  - {fileID: 21300000, guid: d9d333fd17be47e18d4a7f666c20b983, type: 3}
+  - {fileID: 21300000, guid: 7c1216f6100b48cc8e85acc2afe186d1, type: 3}
+  - {fileID: 21300000, guid: 57fd9beb423742d896488b11e26125d3, type: 3}
+  switchOffSprite: {fileID: 21300000, guid: 95546f0bfeee43c2a5ed9d16aec4ca91, type: 3}
+  switchOnSprite: {fileID: 21300000, guid: f6f02fd7098e40b2bdfa2874b26123ac, type: 3}
+  buttonPressClip: {fileID: 8300000, guid: a27140136958485b88113986e25c0d2f, type: 3}
+  buttonReleaseClip: {fileID: 8300000, guid: 7598d9e4a7cc47d08868091af9424567, type: 3}
+  interactionVolume: 0.8
