@@ -92,12 +92,12 @@ Adventure Game: Robot Repair (Unity Technologies), Unity 6.3, URP.
 ### Крок 4 — Build Profiles і параметри збірки
 
 - [x] У `EditorBuildSettings` усі 6 сцен увімкнені; першою стоїть стартова `StartScreen`.
-- [ ] У Unity Build Profiles вибрати Windows активним профілем і перевірити, що його Scene List містить ці сцени в тому ж порядку.
+- [x] У Unity Build Profiles Windows активний; його спільний Scene List містить усі 6 сцен, першою є `StartScreen`.
 - [x] Player Settings → Product Name: `Robot Repair`.
 - [x] Player Settings → режим екрана: Windowed.
-- [ ] Зібрати гру в теку поза папкою проєкту (наприклад, `../RobotRepair-Build/`).
+- [x] Зібрати гру поза папкою проєкту: `C:\Users\vanzzi\RobotRepair-Build\Robot Repair.exe` (збірка успішна).
 
-Статус кроку: **частково готово**; активний Windows-профіль потрібно підтвердити в Unity, після цього зібрати `.exe` назовні проєкту.
+Статус кроку: **виконано**.
 
 ### Крок 5 — Перевірка зібраного `.exe`
 
