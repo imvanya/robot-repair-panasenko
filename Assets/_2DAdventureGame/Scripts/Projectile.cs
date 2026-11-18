@@ -55,17 +55,12 @@ public class Projectile : MonoBehaviour
         Destroy(gameObject);
     }
 
-    // Допоміжний метод для відтворення звуку в точці знищення снаряда
+    // Відтворює окремий звук зіткнення, якщо його призначено в Inspector.
+    // Звук пострілу вже запускає PlayerController, тому не повторюємо його тут.
     void PlayHitSound()
     {
-        if (AudioManager.Instance != null)
+        if (hitClip != null)
         {
-            AudioManager.Instance.PlaySFX(AudioManager.Instance.projectile,
-                AudioManager.Instance.projectileVolume);
-        }
-        else if (hitClip != null)
-        {
-            // Програє звук у світовій позиції снаряда перед тим, як він зникне
             AudioSource.PlayClipAtPoint(hitClip, transform.position);
         }
     }
