@@ -78,6 +78,14 @@ public class AudioManager : MonoBehaviour
         if (sfxSource == null)
             sfxSource = gameObject.AddComponent<AudioSource>();
 
+        // This source is dedicated to effects. Its serialized Volume used to
+        // inherit the music slider value (0.571 in the scene), which silently
+        // reduced every PlayOneShot even when an effect's own slider was 1.
+        sfxSource.volume = 1f;
+        sfxSource.playOnAwake = false;
+        sfxSource.loop = false;
+        sfxSource.spatialBlend = 0f;
+
         GameObject musicPlaybackObject = new GameObject("Music Playback");
         musicPlaybackObject.transform.SetParent(transform, false);
         musicSource = musicPlaybackObject.AddComponent<AudioSource>();
