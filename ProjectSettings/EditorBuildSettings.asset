@@ -11,13 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_2DAdventureGame/Scenes/MyLevel.unity
     guid: 9daa198755cb5c24fb3a04b99b221587
-  - enabled: 1
+  - enabled: 0
     path: Assets/_2DAdventureGame/Tutorial_Demo/Demo_Scenes/Final/Ruby_Example_Scene.unity
     guid: 0160895f6ec224ed19a633783a19c1f1
-  - enabled: 1
+  - enabled: 0
     path: Assets/_2DAdventureGame/Tutorial_Demo/Demo_Scenes/Final/Ducko_Sample_Scene.unity
     guid: ab87f43f1452713498275fad449caa73
-  - enabled: 1
+  - enabled: 0
     path: Assets/_2DAdventureGame/Tutorial_Demo/Demo_Scenes/Final/SugarLand_Example_Scene.unity
     guid: a86a62f58fa7649af9958b6c53bc8d28
   - enabled: 1

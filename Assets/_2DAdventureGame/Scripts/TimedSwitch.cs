@@ -44,7 +44,6 @@ public class TimedSwitch : MonoBehaviour
 
     IEnumerator OpenDoorFor(float seconds)
     {
-        // Separate the short button click from the longer door mechanism sound.
         yield return new WaitForSeconds(0.1f);
         DoorAudio doorAudio = door.GetComponent<DoorAudio>();
         if (doorAudio != null)

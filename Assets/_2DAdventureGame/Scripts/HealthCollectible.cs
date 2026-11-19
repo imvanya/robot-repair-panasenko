@@ -14,7 +14,6 @@ public class HealthCollectible : MonoBehaviour
         {
             collected = true;
             controller.ChangeHealth(amount);
-            // Програємо звук через метод у PlayerController, якщо він заданий
             if (AudioManager.Instance != null)
             {
                 AudioManager.Instance.PlaySFX(AudioManager.Instance.collectible,

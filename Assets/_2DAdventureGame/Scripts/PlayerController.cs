@@ -9,8 +9,8 @@ public class PlayerController : MonoBehaviour
     Vector2 move;
     public float speed = 3.0f;
 
-    public float fireCooldown = 0.5f; // Час затримки в секундах
-    private float nextFireTime = 0f;  // Змінна для відстеження часу наступного пострілу
+    public float fireCooldown = 0.5f; 
+    private float nextFireTime = 0f;  
     
     public int maxHealth = 5;
     public int health { get { return currentHealth; } }
@@ -30,9 +30,8 @@ public class PlayerController : MonoBehaviour
 
     private NonPlayerCharacter lastNonPlayerCharacter;
 
-    // Звуки гравця
-    public AudioClip hitSound;      // Звук отримання шкоди
-    public AudioClip launchSound;   // Звук запуску шестерінки (НОВЕ)
+    public AudioClip hitSound;      
+    public AudioClip launchSound;   
     AudioSource audioSource;
     private float nextFootstepTime;
 
@@ -138,14 +137,11 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    // Called by footstep events on the four run animation clips.
     public void PlayFootstep()
     {
-        // Ignore an event that lands during the run-to-idle transition.
         if (move.sqrMagnitude <= 0.01f || AudioManager.Instance == null || audioSource == null)
             return;
 
-        // Blend trees can emit the same event from two directional clips at once.
         if (Time.time < nextFootstepTime)
             return;
         nextFootstepTime = Time.time + 0.15f;
@@ -166,7 +162,6 @@ public class PlayerController : MonoBehaviour
 
         animator.SetTrigger("Launch");
         
-        // Відтворюємо звук кидка шестерінки
         PlaySound(AudioManager.Instance != null ? AudioManager.Instance.projectile : launchSound,
             AudioManager.Instance != null ? AudioManager.Instance.projectileVolume : 1f);
     }

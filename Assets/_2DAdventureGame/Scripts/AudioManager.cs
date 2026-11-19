@@ -35,12 +35,11 @@ public class AudioManager : MonoBehaviour
 
     private void Start()
     {
-        // Запускаємо фонову музику при старті гри
         if (backgroundMusic != null && musicSource != null)
         {
             musicSource.clip = backgroundMusic;
             musicSource.volume = musicVolume;
-            musicSource.loop = true; // Робимо музику зацикленою, якщо це не налаштовано в самому AudioSource
+            musicSource.loop = true; 
             musicSource.Play();
         }
     }
@@ -48,8 +47,6 @@ public class AudioManager : MonoBehaviour
     private void OnValidate()
     {
         musicVolume = Mathf.Clamp01(musicVolume);
-        // Only update the runtime playback source. Never couple this slider to
-        // the AudioSource component serialized on the AudioManager object.
         if (Application.isPlaying && musicSource != null)
             musicSource.volume = musicVolume;
     }
@@ -64,9 +61,6 @@ public class AudioManager : MonoBehaviour
 
         Instance = this;
 
-        // Preserve the scene's source for SFX and create a dedicated runtime
-        // source for music so Music Volume does not change the Inspector's
-        // AudioSource Volume value.
         AudioSource sceneMusicSource = musicSource;
         if (sfxSource == null || sfxSource == sceneMusicSource)
         {
@@ -78,9 +72,6 @@ public class AudioManager : MonoBehaviour
         if (sfxSource == null)
             sfxSource = gameObject.AddComponent<AudioSource>();
 
-        // This source is dedicated to effects. Its serialized Volume used to
-        // inherit the music slider value (0.571 in the scene), which silently
-        // reduced every PlayOneShot even when an effect's own slider was 1.
         sfxSource.volume = 1f;
         sfxSource.playOnAwake = false;
         sfxSource.loop = false;
@@ -100,7 +91,6 @@ public class AudioManager : MonoBehaviour
             Instance = null;
     }
 
-    // Метод для відтворення будь-якого звукового ефекту
     public void PlaySFX(AudioClip clip, float volume = 1f)
     {
         if (clip != null && sfxSource != null)

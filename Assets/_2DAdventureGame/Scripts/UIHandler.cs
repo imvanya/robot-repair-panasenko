@@ -6,7 +6,6 @@ public class UIHandler : MonoBehaviour
 {
     public static UIHandler instance { get; private set; }
 
-    // НОВЕ (крок 12): поля репліки
     public float displayTime = 4.0f;
     private VisualElement m_NonPlayerDialogue;
     private float m_TimerDisplay;
@@ -19,6 +18,7 @@ public class UIHandler : MonoBehaviour
     private int m_RepairedRobots;
     private int m_TotalRobots;
     private Button m_RestartButton;
+    private Button m_MainMenuButton;
 
     private void Awake()
     {
@@ -33,7 +33,6 @@ public class UIHandler : MonoBehaviour
             .Q<VisualElement>("HealthBar");
         SetHealthValue(1.0f);
 
-        // НОВЕ (крок 12): ховаємо репліку на старті
         m_NonPlayerDialogue = uiDocument.rootVisualElement
             .Q<VisualElement>("NPCDialogue");
         m_NonPlayerDialogue.style.display = DisplayStyle.None;
@@ -45,20 +44,29 @@ public class UIHandler : MonoBehaviour
             .Q<VisualElement>("WinScreenContainer");
         m_RobotCounter = uiDocument.rootVisualElement.Q<Label>("CounterLabel");
         m_RestartButton = uiDocument.rootVisualElement.Q<Button>("RestartButton");
+        m_MainMenuButton = uiDocument.rootVisualElement.Q<Button>("MainMenuButton");
         if (m_RestartButton != null)
         {
             m_RestartButton.style.display = DisplayStyle.None;
             m_RestartButton.clicked += RestartLevel;
+        }
+        if (m_MainMenuButton != null)
+        {
+            m_MainMenuButton.style.display = DisplayStyle.None;
+            m_MainMenuButton.clicked += ReturnToMainMenu;
         }
         SetCounter(m_RepairedRobots, m_TotalRobots);
     }
 
     public void SetHealthValue(float percentage)
     {
+        if (m_Healthbar == null)
+            return;
+
+        percentage = Mathf.Clamp01(percentage);
         m_Healthbar.style.width = Length.Percent(100 * percentage);
     }
 
-    // НОВЕ (крок 12): таймер показу репліки
     private void Update()
     {
         if (m_TimerDisplay > 0)
@@ -72,7 +80,6 @@ public class UIHandler : MonoBehaviour
 
     }
 
-    // НОВЕ (крок 12): показати репліку
     public void DisplayDialogue()
     {
         m_NonPlayerDialogue.style.display = DisplayStyle.Flex;
@@ -95,11 +102,18 @@ public class UIHandler : MonoBehaviour
     {
         if (m_RestartButton != null)
             m_RestartButton.style.display = DisplayStyle.Flex;
+        if (m_MainMenuButton != null)
+            m_MainMenuButton.style.display = DisplayStyle.Flex;
     }
 
     private void RestartLevel()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    private void ReturnToMainMenu()
+    {
+        SceneManager.LoadScene(0);
     }
 
     public void SetCounter(int repaired, int total)

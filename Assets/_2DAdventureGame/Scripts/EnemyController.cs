@@ -3,25 +3,22 @@ using UnityEngine;
 [RequireComponent(typeof(AudioSource))]
 public class EnemyController : MonoBehaviour
 {
-    // Налаштування руху
     public float speed = 1.0f;
     public bool vertical;
 
-    // Налаштування таймера патрулювання
     public float changeTime = 3.0f;
     private float timer;
     private int direction = 1;
+    public float damageCooldown = 1.0f;
+    private float nextDamageTime = 0f;
 
-    // Компоненти
     private Rigidbody2D rigidbody2d;
     private Animator animator;
     bool broken = true;
 
-    // Звуки
-    public AudioClip fixedClip;      // Звук при ремонті робота
-    private AudioSource audioSource; // Компонент для відтворення звуків на самому ворозі
+    public AudioClip fixedClip;      
+    private AudioSource audioSource; 
 
-    // НОВЕ (крок 17): GameManager питає, чи ворог ще зламаний
     public bool isBroken { get { return broken; } }
     public event System.Action OnFixed;
 
@@ -29,7 +26,7 @@ public class EnemyController : MonoBehaviour
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        audioSource = GetComponent<AudioSource>(); // Отримуємо AudioSource з об'єкта ворога
+        audioSource = GetComponent<AudioSource>(); 
         if (audioSource == null)
             audioSource = gameObject.AddComponent<AudioSource>();
         audioSource.enabled = true;
@@ -40,7 +37,6 @@ public class EnemyController : MonoBehaviour
 
     void Update()
     {
-        // Якщо ворог полагодився, він більше не рухається і не чіпає таймер
         if (!broken)
         {
             return;
@@ -48,7 +44,6 @@ public class EnemyController : MonoBehaviour
 
         EnsureWalkingAudio();
 
-        // Відлік таймера патрулювання
         timer -= Time.deltaTime;
         if (timer < 0)
         {
@@ -85,7 +80,6 @@ public class EnemyController : MonoBehaviour
 
         Vector2 position = rigidbody2d.position;
 
-        // Вибір осі руху (вертикально чи горизонтально)
         if (vertical)
         {
             position.y = position.y + speed * direction * Time.deltaTime;
@@ -102,24 +96,20 @@ public class EnemyController : MonoBehaviour
         rigidbody2d.MovePosition(position);
     }
 
-    // Animation events can arrive from blended directional clips. They only
-    // ensure one loop is active; they never replay or stack the long clip.
-    public void PlayFootstep()
-    {
-        // Intentionally empty. The clip contains the full walking sequence.
-    }
 
-    // Нанесення шкоди при першому дотику
-    void OnTriggerEnter2D(Collider2D other)
+    void OnTriggerStay2D(Collider2D other)
     {
-        PlayerController player = other.gameObject.GetComponent<PlayerController>();
+        if (!broken || Time.time < nextDamageTime)
+        return;
+
+        PlayerController player = other.GetComponent<PlayerController>();
         if (player != null)
         {
-            player.ChangeHealth(-1);
+        player.ChangeHealth(-1);
+        nextDamageTime = Time.time + damageCooldown;
         }
     }
 
-    // Метод ремонту робота
     public void Fix()
     {
         if (!broken)
@@ -131,7 +121,6 @@ public class EnemyController : MonoBehaviour
         audioSource.Stop();
         audioSource.loop = false;
 
-        // Відтворюємо звук лагодження, якщо він призначений і є AudioSource
         if (AudioManager.Instance != null && audioSource != null
             && AudioManager.Instance.enemyFix != null)
         {

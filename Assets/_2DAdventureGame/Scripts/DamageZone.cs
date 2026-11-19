@@ -10,8 +10,6 @@ public class DamageZone : MonoBehaviour
             other.GetComponent<PlayerController>();
         if (controller != null)
         {
-            // PlayerController's invincibility window makes this one damage/audio event
-            // per hit, even though this callback runs every physics frame.
             controller.ChangeHealth(-damage);
         }
     }

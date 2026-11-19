@@ -5,7 +5,7 @@ public class Projectile : MonoBehaviour
     Rigidbody2D rigidbody2d;
     
     [Header("Audio")]
-    public AudioClip hitClip; // Звук при влучанні / зіткненні
+    public AudioClip hitClip; 
     private bool hasImpacted;
 
     void Awake()
@@ -44,7 +44,6 @@ public class Projectile : MonoBehaviour
         hasImpacted = true;
         if (enemy != null)
         {
-            // Repair's local sound and animation are the single feedback for this hit.
             enemy.Fix();
         }
         else
@@ -55,8 +54,6 @@ public class Projectile : MonoBehaviour
         Destroy(gameObject);
     }
 
-    // Відтворює окремий звук зіткнення, якщо його призначено в Inspector.
-    // Звук пострілу вже запускає PlayerController, тому не повторюємо його тут.
     void PlayHitSound()
     {
         if (hitClip != null)
